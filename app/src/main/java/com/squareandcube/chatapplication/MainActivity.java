@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if(FirebaseAuth.getInstance().getCurrentUser() == null) {
-            //Start sign in/sign up activity
+            //Start Sign In/Sign Up activity
             startActivityForResult(
                     AuthUI.getInstance().createSignInIntentBuilder().build(),
                     SIGN_IN_REQUEST_CODE
